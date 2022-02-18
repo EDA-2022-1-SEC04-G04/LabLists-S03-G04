@@ -147,7 +147,7 @@ def getBooksByAuthor(catalog, authorname):
     """
     Retorna un autor con sus libros a partir del nombre del autor
     """
-    posauthor = lt.isPresent(catalog['authors'], authorname)
+    posauthor = lt.isPresent(catalog['authors'], authorname) 
     if posauthor > 0:
         author = lt.getElement(catalog['authors'], posauthor)
         return author
